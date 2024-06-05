@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Animal Catalog</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+     
+    <h1>Gallery</h1>
+    <div class="filters">
+        <button onclick="fetchData('dogs')">Dog</button>
+        <button onclick="fetchData('cats')">Cat</button>
+        <button onclick="fetchData('birds')">Bird</button>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by name..." oninput="searchAnimals()">
+    </div>
+    <div id="galleryContent" class="gallery-container">
+        <!-- Dynamically generated content will go here -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

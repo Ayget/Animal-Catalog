@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>About Us - Animal Catalog</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Animal Catalog</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="about-container">
+        <h1>Animal Catalog</h1>
+        <p>Welcome to our Animal Catalog, your ultimate destination for exploring and learning about a wide variety of animals. Our catalog is designed to provide comprehensive information about different animal species, their habitats, behaviors, and unique characteristics. Whether you are a passionate animal lover, a student, or just someone curious about the animal kingdom, our catalog offers a wealth of knowledge to satisfy your interest.</p>
+        
+        <h2>Discover the Diversity of the Animal Kingdom</h2>
+        <p>Our catalog features an extensive range of animals, from domestic pets like cats and dogs to exotic wildlife such as birds and reptiles. Each entry in the catalog is meticulously curated to include essential details such as scientific names, physical descriptions, natural habitats, dietary preferences, and interesting facts that set each species apart.</p>
+        
+        <h2>Educational and Engaging Content</h2>
+        <p>We believe that learning about animals should be both educational and engaging. That's why our catalog includes high-quality images, informative videos, and interactive content that brings the world of animals to life. You can explore different categories, read fascinating articles, and watch documentaries that delve deep into the lives of these amazing creatures.</p>
+        
+        <h2>Promoting Conservation and Awareness</h2>
+        <p>At the heart of our mission is a commitment to promoting animal conservation and awareness. Our catalog highlights endangered species and the efforts being made to protect them. We provide information on conservation programs, how you can get involved, and what steps you can take to help preserve the natural habitats of these animals.</p>
+        
+        <h2>User-Friendly and Accessible</h2>
+        <p>Our Animal Catalog is designed with user-friendliness in mind. The intuitive interface allows you to easily search for specific animals, filter by categories, and navigate through different sections effortlessly. Whether you are accessing the catalog from a computer, tablet, or smartphone, the experience remains seamless and enjoyable.</p>
+        
+        <h2>Join Our Community</h2>
+        <p>We invite you to join our growing community of animal enthusiasts. Share your own stories, photos, and experiences with animals, and connect with others who share your passion. Participate in forums, attend virtual events, and stay updated with the latest news and discoveries in the animal world.</p>
+        
+        <h2>Continuous Updates and Expansion</h2>
+        <p>The world of animals is vast and ever-evolving, and so is our catalog. We are continuously updating our content with new species, recent studies, and the latest conservation efforts. Our goal is to provide the most up-to-date and accurate information, ensuring that our catalog remains a reliable resource for all animal-related inquiries.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    </script>
+</body>
+</html>
