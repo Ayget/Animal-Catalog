@@ -4,6 +4,8 @@ html, body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
