@@ -1,106 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-
     <style>
-        body{
-    margin: 0;
-    padding: 0;
-    background: url(husky.jpg) no-repeat;
-    background-size: cover;
-  }
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(husky.jpg) no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-  
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-.logo {
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    
-}
+        .logo {
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-}
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
 
-.nav-links li {
-    margin: 0 15px;
-}
+        .nav-links li {
+            margin: 0 15px;
+        }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-  .box{
-    width: 450px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    color: white;
-    font-family: 'Century Gothic',sans-serif;
-  }
-  .box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  .box h1{
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-weight: 100;
-  }
-  .box h5{
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 100;
-  }
-  .box p{
-    text-align: justify;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-  }
-  .box li{
-    display: inline-block;
-    margin: 6px;
-    list-style: none;
-  }
-  .box li a{
-    color: white;
-    text-decoration: none;
-    font-size: 60px;
-    transition: all ease-in-out 250ms;
-  }
-  .box li a:hover{
-    color: #b9b9b9;
-  }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 450px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            text-align: center;
+            margin: 20px auto;
+            color: white;
+            font-family: 'Century Gothic', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .box-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            font-weight: 100;
+        }
+
+        .box h5 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 100;
+        }
+
+        .box p {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box li {
+            display: inline-block;
+            margin: 6px;
+            list-style: none;
+        }
+
+        .box li a {
+            color: white;
+            text-decoration: none;
+            font-size: 40px;
+            transition: all ease-in-out 250ms;
+        }
+
+        .box li a:hover {
+            color: #b9b9b9;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+                background-color: #333;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                padding: 10px;
+                width: 100%;
+                display: block;
+            }
+
+            .menu-toggle {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+            }
+
+            .menu-toggle .bar {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+                transition: 0.4s;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .box {
+                padding: 20px;
+            }
+
+            .box h1 {
+                font-size: 28px;
+            }
+
+            .box h5 {
+                font-size: 16px;
+            }
+
+            .box p {
+                font-size: 14px;
+            }
+
+            .box-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .box li a {
+                font-size: 30px;
+            }
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="x.css">
-    
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
     <title>Contact Us</title>
 </head>
+
 <body>
 
     <nav class="navbar">
         <div class="logo">Animal Catalog</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -111,15 +197,25 @@
     <div class="box">
         <img src="images/profile.jpg" alt="" class="box-img">
         <h1>Joni Dani</h1>
-      <h5>
-      Frontend - Backend</h5>
-      <p>
-      A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
-      <ul>
-      <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-      </ul>
-      </div>
+        <h5>Frontend - Backend</h5>
+        <p>A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
