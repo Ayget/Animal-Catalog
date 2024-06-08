@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: url(husky.jpg) no-repeat;
+            background: url(husky.jpg) no-repeat center center fixed;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -39,6 +38,20 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: 0.4s;
         }
 
         .box {
@@ -100,6 +113,34 @@
         }
 
         /* Media Queries */
+        @media (max-width: 992px) {
+            .box {
+                width: 80%;
+                padding: 30px;
+            }
+
+            .box h1 {
+                font-size: 28px;
+            }
+
+            .box h5 {
+                font-size: 16px;
+            }
+
+            .box p {
+                font-size: 14px;
+            }
+
+            .box-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .box li a {
+                font-size: 30px;
+            }
+        }
+
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -135,51 +176,67 @@
                 cursor: pointer;
             }
 
-            .menu-toggle .bar {
-                width: 25px;
-                height: 3px;
-                background-color: white;
-                margin: 4px 0;
-                transition: 0.4s;
+            .box {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .box h1 {
+                font-size: 24px;
+            }
+
+            .box h5 {
+                font-size: 14px;
+            }
+
+            .box p {
+                font-size: 12px;
+            }
+
+            .box-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .box li a {
+                font-size: 25px;
             }
         }
 
         @media (max-width: 576px) {
             .box {
-                padding: 20px;
+                width: 100%;
+                padding: 15px;
             }
 
             .box h1 {
-                font-size: 28px;
+                font-size: 20px;
             }
 
             .box h5 {
-                font-size: 16px;
+                font-size: 12px;
             }
 
             .box p {
-                font-size: 14px;
+                font-size: 10px;
             }
 
             .box-img {
-                width: 120px;
-                height: 120px;
+                width: 80px;
+                height: 80px;
             }
 
             .box li a {
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     </style>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
     <title>Contact Us</title>
 </head>
-
 <body>
-
     <nav class="navbar">
         <div class="logo">Animal Catalog</div>
         <div class="menu-toggle" id="mobile-menu">
@@ -217,5 +274,4 @@
         });
     </script>
 </body>
-
 </html>
