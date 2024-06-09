@@ -1,4 +1,4 @@
-/* Global Styles */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ html, body {
     transition: 0.4s;
 }
 
-/* Hero Section */
+
 .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(hero.jpg);
     background-position: center;
@@ -85,7 +85,7 @@ html, body {
     line-height: 1.5;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
     .hero-text h1 {
         font-size: 2.5rem;
