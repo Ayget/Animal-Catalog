@@ -1,4 +1,4 @@
-/* Global Styles */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -96,11 +96,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between images */
+    gap: 20px; 
 }
 
 .gallery-item {
-    width: calc(20% - 20px); /* Adjust to ensure 5 items per row */
+    width: calc(20% - 20px); 
     box-sizing: border-box;
     cursor: pointer;
     position: relative;
@@ -115,7 +115,7 @@ h1 {
 }
 
 .animal-image {
-    width: 100%; /* Make image width 100% of the container */
+    width: 100%; 
     height: 200px;
     object-fit: cover;
 }
@@ -193,25 +193,25 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .gallery-item {
-        width: calc(25% - 20px); /* 4 items per row */
+        width: calc(25% - 20px); 
     }
 }
 
 @media (max-width: 992px) {
     .gallery-item {
-        width: calc(33.33% - 20px); /* 3 items per row */
+        width: calc(33.33% - 20px); 
     }
 }
 
 @media (max-width: 768px) {
     .gallery-item {
-        width: calc(50% - 20px); /* 2 items per row */
+        width: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 576px) {
     .gallery-item {
-        width: calc(100% - 20px); /* 1 item per row */
+        width: calc(100% - 20px); 
     }
 
     .nav-links {
