@@ -1,4 +1,4 @@
-/* Global Styles */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ html, body {
     height: 100%;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ html, body {
     transition: 0.4s;
 }
 
-/* About Page */
+
 .about-container {
     max-width: 800px;
     margin: 50px auto;
@@ -79,7 +79,7 @@ html, body {
     margin-bottom: 20px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1200px) {
     .about-container {
         padding: 15px;
